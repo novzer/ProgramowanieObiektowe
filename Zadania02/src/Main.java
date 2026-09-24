@@ -68,3 +68,56 @@
 //        scanner.close();
 //    }
 //}
+//Zad.4
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Podaj pierwszą liczbę: ");
+//        int a = scanner.nextInt();
+//
+//        System.out.print("Podaj drugą liczbę: ");
+//        int b = scanner.nextInt();
+//
+//        System.out.print("Podaj trzecią liczbę: ");
+//        int c = scanner.nextInt();
+//
+//        int najwieksza = Math.max(a, Math.max(b, c));
+//
+//        System.out.println("Największa liczba to: " + najwieksza);
+//    }
+//}
+//Zad.5
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Podaj numer miesiąca (1-12): ");
+//        int numerMiesiaca = scanner.nextInt();
+//
+//        String nazwaMiesiaca = switch (numerMiesiaca) {
+//            case 1 -> "Styczeń";
+//            case 2 -> "Luty";
+//            case 3 -> "Marzec";
+//            case 4 -> "Kwiecień";
+//            case 5 -> "Maj";
+//            case 6 -> "Czerwiec";
+//            case 7 -> "Lipiec";
+//            case 8 -> "Sierpień";
+//            case 9 -> "Wrzesień";
+//            case 10 -> "Październik";
+//            case 11 -> "Listopad";
+//            case 12 -> "Grudzień";
+//            default -> "Nieprawidlowy numer miesiaca";
+//        };
+//
+//        System.out.println(nazwaMiesiaca);
+//
+//        scanner.close();
+//    }
+//}
+
