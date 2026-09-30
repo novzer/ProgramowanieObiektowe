@@ -25,23 +25,97 @@
 //    }
 //}
 //Zad.2
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] Object) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Podaj liczbę całkowitą dodatnią n: ");
+//        int n = scanner.nextInt();
+//
+//        int potega = 1;
+//
+//        while (potega <= n) {
+//            System.out.print(potega + " ");
+//            potega *= 2;
+//        }
+//        System.out.println();
+//        scanner.close();
+//    }
+//}
+//Zad.3
+//import java.util.Scanner;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int suma = 0;
+//        int liczba;
+//
+//        System.out.println("Podawaj liczby (wpisanie 0 kończy program):");
+//
+//        do {
+//            liczba = scanner.nextInt();
+//            suma += liczba;
+//        } while (liczba != 0);
+//
+//        System.out.println("Suma podanych liczb to: " + suma);
+//
+//        scanner.close();
+//    }
+//}
+//Zad.4
 import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] Object) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Podaj liczbę całkowitą dodatnią n: ");
-        int n = scanner.nextInt();
+        int suma = 0;
+        int liczba;
+        int min = 0;
+        int max = 0;
+        int ileLiczb = 0;
 
-        int potega = 1;
+        System.out.println("Podawaj liczby (wpisanie 0 kończy program):");
 
-        while (potega <= n) {
-            System.out.print(potega + " ");
-            potega *= 2;
+        do {
+            liczba = scanner.nextInt();
+
+            if (liczba != 0) {
+                suma += liczba;
+                ileLiczb++;
+
+                if (ileLiczb == 1) {
+                    min = liczba;
+                    max = liczba;
+                } else {
+                    if (liczba < min) {
+                        min = liczba;
+                    }
+
+                    if (liczba > max) {
+                        max = liczba;
+                    }
+                }
+            }
+
+        } while (liczba != 0);
+
+        if (ileLiczb > 0) {
+            double srednia = (double) suma / ileLiczb;
+
+            System.out.println("Najmniejsza liczba: " + min);
+            System.out.println("Największa liczba: " + max);
+            System.out.println("Suma najmniejszej i największej liczby: " + (min + max));
+            System.out.println("Średnia arytmetyczna: " + srednia);
+        } else {
+            System.out.println("Nie podano żadnych liczb.");
         }
-        System.out.println();
+
         scanner.close();
     }
 }
+
+
+
 
