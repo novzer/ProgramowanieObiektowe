@@ -65,57 +65,66 @@
 //    }
 //}
 //Zad.4
+//import java.util.Scanner;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        int suma = 0;
+//        int liczba;
+//        int min = 0;
+//        int max = 0;
+//        int ileLiczb = 0;
+//
+//        System.out.println("Podawaj liczby (wpisanie 0 kończy program):");
+//
+//        do {
+//            liczba = scanner.nextInt();
+//
+//            if (liczba != 0) {
+//                suma += liczba;
+//                ileLiczb++;
+//
+//                if (ileLiczb == 1) {
+//                    min = liczba;
+//                    max = liczba;
+//                } else {
+//                    if (liczba < min) {
+//                        min = liczba;
+//                    }
+//
+//                    if (liczba > max) {
+//                        max = liczba;
+//                    }
+//                }
+//            }
+//
+//        } while (liczba != 0);
+//
+//        if (ileLiczb > 0) {
+//            double srednia = (double) suma / ileLiczb;
+//
+//            System.out.println("Najmniejsza liczba: " + min);
+//            System.out.println("Największa liczba: " + max);
+//            System.out.println("Suma najmniejszej i największej liczby: " + (min + max));
+//            System.out.println("Średnia arytmetyczna: " + srednia);
+//        } else {
+//            System.out.println("Nie podano żadnych liczb.");
+//        }
+//
+//        scanner.close();
+//    }
+//}
+//Zad.5
+import java.util.Random;
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class Main{
+public static void main(String[]args) {
+Random random = new Random();
+    int wylosowanaLiczba = random.nextInt(100) + 1;
 
-        int suma = 0;
-        int liczba;
-        int min = 0;
-        int max = 0;
-        int ileLiczb = 0;
 
-        System.out.println("Podawaj liczby (wpisanie 0 kończy program):");
 
-        do {
-            liczba = scanner.nextInt();
-
-            if (liczba != 0) {
-                suma += liczba;
-                ileLiczb++;
-
-                if (ileLiczb == 1) {
-                    min = liczba;
-                    max = liczba;
-                } else {
-                    if (liczba < min) {
-                        min = liczba;
-                    }
-
-                    if (liczba > max) {
-                        max = liczba;
-                    }
-                }
-            }
-
-        } while (liczba != 0);
-
-        if (ileLiczb > 0) {
-            double srednia = (double) suma / ileLiczb;
-
-            System.out.println("Najmniejsza liczba: " + min);
-            System.out.println("Największa liczba: " + max);
-            System.out.println("Suma najmniejszej i największej liczby: " + (min + max));
-            System.out.println("Średnia arytmetyczna: " + srednia);
-        } else {
-            System.out.println("Nie podano żadnych liczb.");
-        }
-
-        scanner.close();
-    }
 }
-
-
-
+}
 
