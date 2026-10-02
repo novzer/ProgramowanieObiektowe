@@ -116,15 +116,44 @@
 //    }
 //}
 //Zad.5
-import java.util.Random;
+//import java.util.Random;
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        Random random = new Random();
+//        int wylosowanaLiczba = random.nextInt(100) + 1;
+//
+//
+//        Scanner scanner = new Scanner(System.in);
+//        int podanaLiczba = 0;
+//
+//        System.out.println("Zgadnij liczbę z zakresu od 1 do 100.");
+//
+//
+//        while (podanaLiczba != wylosowanaLiczba) {
+//            System.out.print("Podaj swoją liczbę: ");
+//            podanaLiczba = scanner.nextInt();
+//
+//            if (podanaLiczba > wylosowanaLiczba) {
+//                System.out.println("Podałeś za dużą wartość.");
+//            } else if (podanaLiczba < wylosowanaLiczba) {
+//                System.out.println("Podałeś za małą wartość.");
+//            } else {
+//                System.out.println("Gratulacje! Odgadłeś liczbę.");
+//            }
+//        }
+//
+//        scanner.close();
+//    }
+//}
+//Zad.6
 import java.util.Scanner;
-public class Main{
-public static void main(String[]args) {
-Random random = new Random();
-    int wylosowanaLiczba = random.nextInt(100) + 1;
+
+public class Main {
+    public static void main(String[] args) {
 
 
-
+    }
 }
-}
-
